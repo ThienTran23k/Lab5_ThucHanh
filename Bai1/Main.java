@@ -11,7 +11,7 @@ public class Main {
 			menuPhongHoc(dsPhongHoc);
 		} catch (Exception e) {
 			e.getStackTrace();
-			System.out.println("Lỗi chương trình ! Chương trình dừng lại".toUpperCase());
+			System.out.println("Lỗi - Eror".toUpperCase());
 		}
 
 	}
@@ -30,11 +30,11 @@ public class Main {
 		System.out.println("9. Xóa một phòng Học.");
 		System.out.println("10.In ra tổng số phòng Học.");
 		System.out.println("11.In danh sách các phòng máy có 60 máy.");
-		System.out.println("12.Thoát.");
+		System.out.println("0.Thoát.");
 	}
 	private static void menuPhongHoc(DanhSachPhong dsPhongHoc) {
 		
-		int chon = 0;
+		int chon ;
 		do {
 			tieuDeMenu();
 			System.out.println("Bạn chọn : ");
@@ -45,10 +45,12 @@ public class Main {
 				throw null;
 			}
 
-			if(chon < 0 || chon > 12) {
+			if(chon < 0|| chon > 11) {
 				System.out.println("Chọn sai! Chọn từ số(0 đến 12)!\nChọn lại: ");
 			}else {
 				switch (chon) {
+				case 0:
+					break;
 				case 1:
 					menuChonNhapMem(dsPhongHoc);
 					break;
@@ -90,9 +92,6 @@ public class Main {
 					inDanhSachPhongMay60(dsPhongHoc);
 					break;
 					
-				case 0:
-					nhapCungPhongHoc(dsPhongHoc);
-					break;
 				default:
 					
 					break;

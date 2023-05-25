@@ -17,12 +17,10 @@ public class PhongLyThuyet extends PhongHoc{
 
 	}
 
-
 	public PhongLyThuyet(String maPhong, String dayNha, double dienTich, int soBongDen) {
 		super(maPhong, dayNha, dienTich, soBongDen);
 
 	}
-
 
 	public PhongLyThuyet(String maPhong, String dayNha, double dienTich, int soBongDen, boolean isMayChieu) {
 		super(maPhong, dayNha, dienTich, soBongDen);
